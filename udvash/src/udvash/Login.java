@@ -71,6 +71,9 @@ public class Login {
 				
 				if(user.equals("admin") && pass.equals("admin123456"))
 				{
+					branches bs = new branches();
+					bs.setVisible(true);
+					frame.dispose();
 					JOptionPane.showMessageDialog(frame, "You are Successfully logged in");
 				}
 				else
